@@ -9,7 +9,7 @@ import Foundation
 
 class AppSettings {
 
-    var stateHandler: State
+    private var stateHandler: State
 
     init(stateHandler: State = GlobalStateSingleton.shared) {
         self.stateHandler = stateHandler

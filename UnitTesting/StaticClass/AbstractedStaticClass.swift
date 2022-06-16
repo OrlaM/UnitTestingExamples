@@ -11,10 +11,10 @@ protocol AbstractedStaticClassProtocol {
     func doSomeWork()
 }
 
-class AbstractedStaticClass: AbstractedStaticClassProtocol {
+class StaticClass: AbstractedStaticClassProtocol {
 
     func doSomeWork() {
-        AbstractedStaticClass.doSomeWork()
+        StaticClass.doSomeWork()
     }
 
     static func doSomeWork() {

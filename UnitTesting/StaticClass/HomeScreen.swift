@@ -11,15 +11,13 @@ class HomeScreen {
 
     private let staticClass: AbstractedStaticClassProtocol
 
-    init(staticClass: AbstractedStaticClassProtocol = AbstractedStaticClass()) {
+    init(staticClass: AbstractedStaticClassProtocol = StaticClass()) {
         self.staticClass = staticClass
     }
 
     func setup() {
-        TraditionalStaticClass.doSomeWork()
+        StaticClass.doSomeWork() // OLD
 
-        AbstractedStaticClass.doSomeWork()
-
-        staticClass.doSomeWork()
+        self.staticClass.doSomeWork() // NEW
     }
 }
